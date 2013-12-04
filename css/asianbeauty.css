@@ -1,0 +1,260 @@
+﻿#header, #main, #footer {
+    min-width: 1280px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    position: relative;
+    min-width: 998px;
+    width: 998px;
+}
+
+.text-bg {
+    background: url(../img/text-bg.png) no-repeat;
+    margin: 0;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+}
+
+.text-color-blue {
+    color: #2e3192;
+}
+
+.text-color-dark-gray {
+    color: #59595b;
+}
+
+.text-color-black {
+    color: #000;
+}
+
+/* Header */
+
+#header {
+    background: #fff url(../img/header-border.jpg) repeat-x 0 100%;
+    left: 0;
+    padding-bottom: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+#nav {
+    padding-top: 25px;
+}
+
+#nav .logo-wrap {
+    margin: 0;
+    padding: 0;
+}
+
+#nav .navbar {
+    border-bottom: 2px solid #2e3192;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar .nav-item {
+    padding: 0 18px 0 12px;
+}
+
+.navbar li:last-child .nav-item {
+    padding-right: 0;
+}
+
+.navbar .home {
+    background: url(../img/icons.png) no-repeat 0 0;
+    display: block;
+    height: 20px;
+    margin: 0 12px;
+    padding: 0;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    width: 21px;
+}
+
+/* Main */
+
+#intro {
+    background: url(../img/intro-bg.jpg) 50% 0 no-repeat fixed;
+    height: 916px;
+    padding-top: 112px;
+}
+
+#intro .intro-content {
+    margin: 210px 0 0 575px;
+    width: 382px;
+}
+
+#intro .intro-title {
+    display: block;
+    height: 120px;
+    margin: 0 0 10px 0;
+    width: 382px;
+}
+
+#intro .highlight {
+    border-left : 1px solid #59595b;
+    font-size: 2.5em;
+    margin: 0;
+    padding: 0 0 5px 5px;
+}
+
+#intro .line2 {
+    font-size: 1.75em;
+    line-height: 1em;
+    margin-bottom: 10px;
+}
+
+#intro .intro-link {
+    background-color: #2e3192;
+    color: #fff;
+    padding: 5px 15px;
+}
+
+#who-exhibits {
+    background: url(../img/exhibit-bg.jpg) 50% 0 no-repeat fixed;
+    height: 770px;
+    position: relative;
+}
+
+#who-exhibits .exhibits-content {
+    margin: 185px 0 0 560px;
+    width: 395px;
+}
+
+#who-exhibits .exhibits-title {
+    background-position: 0 -120px;
+    height: 107px;
+    margin-bottom: 5px;
+    width: 372px;
+}
+
+#who-exhibits p {
+    font-size: 0.8em;
+    line-height: 1.1em;
+    margin: 0 0 5px 0;
+    padding: 0 15px;
+}
+
+#who-exhibits p:first-of-type {
+    border-top: 1px solid #ff9f6f;
+    padding-top: 14px;
+    text-align: justify;
+}
+
+#who-exhibits .text-bold {
+    font-weight: bold;
+}
+
+#who-exhibits .list {
+    list-style: disc none outside;
+    margin: 0 0 20px 15px;
+    padding: 0 15px;
+}
+
+#who-exhibits .list-item {
+    color: #ff9966;
+    font-size: 0.7em;
+}
+
+#who-exhibits .exhibits-text-highlight {
+    background: #dc7145;
+    color: #fff;
+    font-size: 1.75em;
+    line-height: 1em;
+    display: block;
+    padding: 5px 10px;
+}
+
+#who-exhibits .line1 {
+    width: 180px;
+}
+
+#who-exhibits .line2 {
+    height: auto;
+    width: 305px;
+}
+
+#who-exhibits .exhibits-img {
+    background: url(../img/exhibits-imgs.jpg) no-repeat;
+    position: absolute;
+}
+
+#who-exhibits .el1 {
+    background-position: 0 0;
+    height: 108px;
+    left: 0;
+    top: 297px;
+    width: 265px;
+}
+
+#who-exhibits .el2 {
+    background-position: -265px 0;
+    height: 217px;
+    left: 265px;
+    top: 297px;
+    width: 132px;
+}
+
+#who-exhibits .el3 {
+    background-position: -397px 0;
+    height: 298px;
+    left: 397px;
+    top: 297px;
+    width: 148px;
+}
+
+#who-exhibits .el4 {
+    background-position: 0 -108px;
+    height: 219px;
+    left: 0;
+    top: 404px;
+    width: 131px;
+}
+
+#who-exhibits .el5 {
+    background-position: -131px -108px;
+    height: 109px;
+    left: 131px;
+    top: 404px;
+    width: 134px;
+}
+
+#who-exhibits .el6 {
+    background-position: -131px -217px;
+    height: 110px;
+    left: 131px;
+    top: 513px;
+    width: 266px;
+}
+
+#who-exhibits .el7 {
+    background-position: -397px -299px;
+    height: 29px;
+    left: 398px;
+    top: 595px;
+    width: 148px;
+}
+
+
+/* Footer */
+#footer {
+    background-color: #24151b;
+    color: #fff;
+    padding: 10px 0;
+}
+
+#footer p {
+    font-size: 0.8em;
+    margin: 5px 0 0 0;
+}
