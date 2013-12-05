@@ -32,6 +32,26 @@
     color: #000;
 }
 
+.text-bold {
+    font-weight: bold;
+}
+
+[class*="-content"] .list {
+    list-style: disc none outside;
+    margin: 0 0 20px 15px;
+    padding: 0 15px;
+}
+
+[class*="-content"] .list-item {
+    color: #ff9966;
+    font-size: 0.7em;
+}
+
+[class*="-content"] p {
+    font-size: 0.8em;
+    line-height: 1.1em;
+    margin: 5px 0;
+}
 /* Header */
 
 #header {
@@ -118,6 +138,7 @@
 #intro .intro-link {
     background-color: #2e3192;
     color: #fff;
+    font-size: 1.5em;
     padding: 5px 15px;
 }
 
@@ -140,8 +161,6 @@
 }
 
 #who-exhibits p {
-    font-size: 0.8em;
-    line-height: 1.1em;
     margin: 0 0 5px 0;
     padding: 0 15px;
 }
@@ -150,21 +169,6 @@
     border-top: 1px solid #ff9f6f;
     padding-top: 14px;
     text-align: justify;
-}
-
-#who-exhibits .text-bold {
-    font-weight: bold;
-}
-
-#who-exhibits .list {
-    list-style: disc none outside;
-    margin: 0 0 20px 15px;
-    padding: 0 15px;
-}
-
-#who-exhibits .list-item {
-    color: #ff9966;
-    font-size: 0.7em;
 }
 
 #who-exhibits .exhibits-text-highlight {
@@ -244,6 +248,31 @@
     left: 398px;
     top: 595px;
     width: 148px;
+}
+
+#visitor {
+    background: url(../img/visitor-bg.jpg) 50% 0 no-repeat fixed;
+    height: 996px;
+    position: relative;
+}
+
+#visitor .visitor-content {
+    margin: 215px 0 0 560px;
+    width: 380px;
+}
+
+#visitor .visitor-title {
+    background-position: 0 -227px;
+    height: 103px;
+    margin-bottom: 20px;
+    width: 378px;
+}
+
+#visitor .visitor-link {
+    background-color: #ff9966;
+    color: #fff;
+    font-size: 1.25em;
+    padding: 5px 15px;
 }
 
 
