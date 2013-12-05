@@ -16,7 +16,7 @@
     background: url(../img/text-bg.png) no-repeat;
     margin: 0;
     overflow: hidden;
-    text-indent: 100%;
+    text-indent: 110%;
     white-space: nowrap;
 }
 
@@ -67,16 +67,16 @@
     padding-top: 25px;
 }
 
-#nav .logo-wrap {
-    margin: 0;
-    padding: 0;
-}
+    #nav .logo-wrap {
+        margin: 0;
+        padding: 0;
+    }
 
-#nav .navbar {
-    border-bottom: 2px solid #2e3192;
-    margin-top: 20px;
-    padding-bottom: 10px;
-}
+    #nav .navbar {
+        border-bottom: 2px solid #2e3192;
+        margin-top: 20px;
+        padding-bottom: 10px;
+    }
 
 .navbar li {
     display: inline-block;
@@ -110,37 +110,37 @@
     padding-top: 112px;
 }
 
-#intro .intro-content {
-    margin: 210px 0 0 575px;
-    width: 382px;
-}
+    #intro .intro-content {
+        margin: 210px 0 0 575px;
+        width: 382px;
+    }
 
-#intro .intro-title {
-    display: block;
-    height: 120px;
-    margin: 0 0 10px 0;
-    width: 382px;
-}
+    #intro .intro-title {
+        display: block;
+        height: 120px;
+        margin: 0 0 10px 0;
+        width: 382px;
+    }
 
-#intro .highlight {
-    border-left : 1px solid #59595b;
-    font-size: 2.5em;
-    margin: 0;
-    padding: 0 0 5px 5px;
-}
+    #intro .highlight {
+        border-left: 1px solid #59595b;
+        font-size: 2.5em;
+        margin: 0;
+        padding: 0 0 5px 5px;
+    }
 
-#intro .line2 {
-    font-size: 1.75em;
-    line-height: 1em;
-    margin-bottom: 10px;
-}
+    #intro .line2 {
+        font-size: 1.75em;
+        line-height: 1em;
+        margin-bottom: 10px;
+    }
 
-#intro .intro-link {
-    background-color: #2e3192;
-    color: #fff;
-    font-size: 1.5em;
-    padding: 5px 15px;
-}
+    #intro .intro-link {
+        background-color: #2e3192;
+        color: #fff;
+        font-size: 1.5em;
+        padding: 5px 15px;
+    }
 
 #who-exhibits {
     background: url(../img/exhibit-bg.jpg) 50% 0 no-repeat fixed;
@@ -148,107 +148,107 @@
     position: relative;
 }
 
-#who-exhibits .exhibits-content {
-    margin: 185px 0 0 560px;
-    width: 395px;
-}
+    #who-exhibits .exhibits-content {
+        margin: 185px 0 0 560px;
+        width: 395px;
+    }
 
-#who-exhibits .exhibits-title {
-    background-position: 0 -120px;
-    height: 107px;
-    margin-bottom: 5px;
-    width: 372px;
-}
+    #who-exhibits .exhibits-title {
+        background-position: 0 -120px;
+        height: 107px;
+        margin-bottom: 5px;
+        width: 372px;
+    }
 
-#who-exhibits p {
-    margin: 0 0 5px 0;
-    padding: 0 15px;
-}
+    #who-exhibits p {
+        margin: 0 0 5px 0;
+        padding: 0 15px;
+    }
 
-#who-exhibits p:first-of-type {
-    border-top: 1px solid #ff9f6f;
-    padding-top: 14px;
-    text-align: justify;
-}
+        #who-exhibits p:first-of-type {
+            border-top: 1px solid #ff9f6f;
+            padding-top: 14px;
+            text-align: justify;
+        }
 
-#who-exhibits .exhibits-text-highlight {
-    background: #dc7145;
-    color: #fff;
-    font-size: 1.75em;
-    line-height: 1em;
-    display: block;
-    padding: 5px 10px;
-}
+    #who-exhibits .exhibits-text-highlight {
+        background: #dc7145;
+        color: #fff;
+        font-size: 1.75em;
+        line-height: 1em;
+        display: block;
+        padding: 5px 10px;
+    }
 
-#who-exhibits .line1 {
-    width: 180px;
-}
+    #who-exhibits .line1 {
+        width: 180px;
+    }
 
-#who-exhibits .line2 {
-    height: auto;
-    width: 305px;
-}
+    #who-exhibits .line2 {
+        height: auto;
+        width: 305px;
+    }
 
-#who-exhibits .exhibits-img {
-    background: url(../img/exhibits-imgs.jpg) no-repeat;
-    position: absolute;
-}
+    #who-exhibits .exhibits-img {
+        background: url(../img/exhibits-imgs.jpg) no-repeat;
+        position: absolute;
+    }
 
-#who-exhibits .el1 {
-    background-position: 0 0;
-    height: 108px;
-    left: 0;
-    top: 297px;
-    width: 265px;
-}
+    #who-exhibits .el1 {
+        background-position: 0 0;
+        height: 108px;
+        left: 0;
+        top: 297px;
+        width: 265px;
+    }
 
-#who-exhibits .el2 {
-    background-position: -265px 0;
-    height: 217px;
-    left: 265px;
-    top: 297px;
-    width: 132px;
-}
+    #who-exhibits .el2 {
+        background-position: -265px 0;
+        height: 217px;
+        left: 265px;
+        top: 297px;
+        width: 132px;
+    }
 
-#who-exhibits .el3 {
-    background-position: -397px 0;
-    height: 298px;
-    left: 397px;
-    top: 297px;
-    width: 148px;
-}
+    #who-exhibits .el3 {
+        background-position: -397px 0;
+        height: 298px;
+        left: 397px;
+        top: 297px;
+        width: 148px;
+    }
 
-#who-exhibits .el4 {
-    background-position: 0 -108px;
-    height: 219px;
-    left: 0;
-    top: 404px;
-    width: 131px;
-}
+    #who-exhibits .el4 {
+        background-position: 0 -108px;
+        height: 219px;
+        left: 0;
+        top: 404px;
+        width: 131px;
+    }
 
-#who-exhibits .el5 {
-    background-position: -131px -108px;
-    height: 109px;
-    left: 131px;
-    top: 404px;
-    width: 134px;
-}
+    #who-exhibits .el5 {
+        background-position: -131px -108px;
+        height: 109px;
+        left: 131px;
+        top: 404px;
+        width: 134px;
+    }
 
-#who-exhibits .el6 {
-    background-position: -131px -217px;
-    height: 110px;
-    left: 131px;
-    top: 513px;
-    width: 266px;
-}
+    #who-exhibits .el6 {
+        background-position: -131px -217px;
+        height: 110px;
+        left: 131px;
+        top: 513px;
+        width: 266px;
+    }
 
-#who-exhibits .el7 {
-    background-position: -397px -299px;
-    height: 29px;
-    left: 398px;
-    top: 595px;
-    width: 148px;
-}
+    #who-exhibits .el7 {
+        background-position: -397px -299px;
+        height: 29px;
+        left: 398px;
+        top: 595px;
+        width: 148px;
+    }
 
 #visitor {
     background: url(../img/visitor-bg.jpg) 50% 0 no-repeat fixed;
@@ -256,25 +256,93 @@
     position: relative;
 }
 
-#visitor .visitor-content {
-    margin: 215px 0 0 560px;
-    width: 380px;
+    #visitor .visitor-content {
+        margin: 215px 0 0 560px;
+        width: 380px;
+    }
+
+    #visitor .visitor-title {
+        background-position: 0 -227px;
+        height: 103px;
+        margin-bottom: 20px;
+        width: 378px;
+    }
+
+    #visitor .visitor-link {
+        background-color: #ff9966;
+        color: #fff;
+        font-size: 1.25em;
+        padding: 5px 15px;
+    }
+
+#about {
+    background: url(../img/about-bg.jpg) 50% 0 no-repeat fixed;
+    height: 982px;
+    position: relative;
 }
 
-#visitor .visitor-title {
-    background-position: 0 -227px;
-    height: 103px;
-    margin-bottom: 20px;
-    width: 378px;
+    #about .about-content {
+        margin-top: 135px;
+    }
+
+.about-content .content-left {
+    margin-top: 25px;
+    width: 480px;
 }
 
-#visitor .visitor-link {
-    background-color: #ff9966;
-    color: #fff;
-    font-size: 1.25em;
-    padding: 5px 15px;
+    .about-content .content-left .about-title {
+        font-size: 2.5em;
+        margin: 0 0 10px 0;
+        position: relative;
+        width: 235px;
+    }
+
+        .about-content .content-left .about-title:after {
+            background: url(../img/logo_ubm.png) no-repeat 0 0;
+            content: "";
+            display: block;
+            height: 72px;
+            position: absolute;
+            top: 0;
+            right: -73px;
+            width: 57px;
+        }
+
+    .about-content .content-left .about-sub-title {
+        border-bottom: 1px solid #ffc2a4;
+        font-size: 0.75em;
+        margin: 0 0 25px 0;
+        padding-bottom: 9px;
+        width: 235px;
+    }
+
+.about-content .content-right {
+    width: 365px;
 }
 
+    .about-content .content-right .about-title {
+        background-position: 0 -330px;
+        height: 133px;
+        width: 377px;
+    }
+
+.about-content .about-img {
+    -moz-border-radius: 15px;
+    -ms-radius: 15px;
+    -o-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.about-content p {
+    font-size: 0.9em;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.about-content .readmore {
+    color: #000;
+}
 
 /* Footer */
 #footer {
@@ -283,7 +351,7 @@
     padding: 10px 0;
 }
 
-#footer p {
-    font-size: 0.8em;
-    margin: 5px 0 0 0;
-}
+    #footer p {
+        font-size: 0.8em;
+        margin: 5px 0 0 0;
+    }
