@@ -1,4 +1,8 @@
-﻿#header, #main, #footer {
+﻿html, body {
+    font-family: 'myriad_procondensed', Helvetica, sans-serif;
+}
+
+#header, #main, #footer {
     min-width: 1280px;
     margin: 0;
     padding: 0;
@@ -44,11 +48,11 @@
 
 [class*="-content"] .list-item {
     color: #ff9966;
-    font-size: 0.7em;
+    font-size: 0.9em;
 }
 
 [class*="-content"] p {
-    font-size: 0.8em;
+    font-size: 1.2em;
     line-height: 1.1em;
     margin: 5px 0;
 }
@@ -83,6 +87,7 @@
 }
 
 .navbar .nav-item {
+    font-size: 1.2em;
     padding: 0 18px 0 12px;
 }
 
@@ -103,6 +108,10 @@
 }
 
 /* Main */
+
+#main .section {
+    overflow: hidden;
+}
 
 #intro {
     background: url(../img/intro-bg.jpg) 50% 0 no-repeat fixed;
@@ -138,8 +147,11 @@
     #intro .intro-link {
         background-color: #2e3192;
         color: #fff;
+        display: block;
         font-size: 1.5em;
+        margin-top: 10px;
         padding: 5px 15px;
+        width: 90px;
     }
 
 #who-exhibits {
@@ -174,7 +186,7 @@
     #who-exhibits .exhibits-text-highlight {
         background: #dc7145;
         color: #fff;
-        font-size: 1.75em;
+        font-size: 1.7em;
         line-height: 1em;
         display: block;
         padding: 5px 10px;
@@ -257,7 +269,7 @@
 }
 
     #visitor .visitor-content {
-        margin: 215px 0 0 560px;
+        margin: 215px 0 0 0;
         width: 380px;
     }
 
@@ -273,6 +285,72 @@
         color: #fff;
         font-size: 1.25em;
         padding: 5px 15px;
+    }
+    
+    #visitor .visitor-img-container {
+       background-color: #d5d1bd;
+       height: 490px;
+       margin-top: 175px;
+       position: relative;
+       width: 500px;
+    }
+    
+    #visitor .visitor-img {
+       background: url(../img/visitor-imgs.jpg) no-repeat;
+       top: 0;
+       position: absolute;
+    }
+    
+    #visitor .el1 {
+        background-position: 0 0;
+        height: 276px;
+        left: 0;
+        
+        width: 93px;
+    }
+    
+    #visitor .el2 {
+        background-position: -99px 0;
+        height: 276px;
+        left: 99px;
+        width: 96px;
+    }
+    
+    #visitor .el3 {
+        background-position: -202px 0;
+        height: 276px;
+        left: 202px;
+        width: 95px;
+    }
+    
+    #visitor .el4 {
+        background-position: -305px 0;
+        height: 276px;
+        left: 305px;
+        width: 94px;
+    }
+    
+    #visitor .el5 {
+        background-position: 100% 0;
+        height: 276px;
+        left: 407px;
+        width: 94px;
+    }
+    
+    #visitor .el6 {
+        background-position: 0 -281px;
+        height: 209px;
+        left: 0px;
+        top: 281px;
+        width: 297px;
+    }
+    
+    #visitor .el7 {
+        background-position: 100% -281px;
+        height: 209px;
+        left: 305px;
+        top: 281px;
+        width: 196px;
     }
 
 #about {
@@ -291,8 +369,11 @@
 }
 
     .about-content .content-left .about-title {
+        background-position: 0 -465px;
         font-size: 2.5em;
+        height: 73px;
         margin: 0 0 10px 0;
+        padding: 0 0 0 73px;
         position: relative;
         width: 235px;
     }
@@ -304,20 +385,12 @@
             height: 72px;
             position: absolute;
             top: 0;
-            right: -73px;
+            right: 0;
             width: 57px;
         }
 
-    .about-content .content-left .about-sub-title {
-        border-bottom: 1px solid #ffc2a4;
-        font-size: 0.75em;
-        margin: 0 0 25px 0;
-        padding-bottom: 9px;
-        width: 235px;
-    }
-
 .about-content .content-right {
-    width: 365px;
+    width: 380px;
 }
 
     .about-content .content-right .about-title {
@@ -335,7 +408,7 @@
 }
 
 .about-content p {
-    font-size: 0.9em;
+    font-size: 1.1em;
     margin-bottom: 25px;
     text-align: justify;
 }
