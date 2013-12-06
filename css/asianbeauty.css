@@ -61,10 +61,10 @@
 #header {
     background: #fff url(../img/header-border.jpg) repeat-x 0 100%;
     left: 0;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     position: fixed;
     top: 0;
-    z-index: 3;
+    z-index: 6;
 }
 
 #nav {
@@ -91,6 +91,10 @@
     padding: 0 18px 0 12px;
 }
 
+    .navbar .nav-item:hover, .navbar .nav-item:focus, .navbar .nav-item.active {
+        color: #2e3192;
+    }
+
 .navbar li:last-child .nav-item {
     padding-right: 0;
 }
@@ -115,8 +119,9 @@
 
 #intro {
     background: url(../img/intro-bg.jpg) 50% 0 no-repeat fixed;
-    height: 916px;
+    height: 948px;
     padding-top: 112px;
+    z-index: 1;
 }
 
     #intro .intro-content {
@@ -156,8 +161,9 @@
 
 #who-exhibits {
     background: url(../img/exhibit-bg.jpg) 50% 0 no-repeat fixed;
-    height: 770px;
+    height: 918px;
     position: relative;
+    z-index: 2;
 }
 
     #who-exhibits .exhibits-content {
@@ -264,8 +270,9 @@
 
 #visitor {
     background: url(../img/visitor-bg.jpg) 50% 0 no-repeat fixed;
-    height: 996px;
+    height: 981px;
     position: relative;
+    z-index: 3;
 }
 
     #visitor .visitor-content {
@@ -355,8 +362,9 @@
 
 #about {
     background: url(../img/about-bg.jpg) 50% 0 no-repeat fixed;
-    height: 982px;
+    height: 849px;
     position: relative;
+    z-index: 4;
 }
 
     #about .about-content {
