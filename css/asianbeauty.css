@@ -125,7 +125,7 @@
 }
 
     #intro .intro-content {
-        margin: 210px 0 0 575px;
+        margin: 150px 0 0 575px;
         width: 382px;
     }
 
@@ -167,7 +167,7 @@
 }
 
     #who-exhibits .exhibits-content {
-        margin: 185px 0 0 560px;
+        margin: 135px 0 0 560px;
         width: 395px;
     }
 
@@ -216,7 +216,7 @@
         background-position: 0 0;
         height: 108px;
         left: 0;
-        top: 297px;
+        top: 247px;
         width: 265px;
     }
 
@@ -224,7 +224,7 @@
         background-position: -265px 0;
         height: 217px;
         left: 265px;
-        top: 297px;
+        top: 247px;
         width: 132px;
     }
 
@@ -232,7 +232,7 @@
         background-position: -397px 0;
         height: 298px;
         left: 397px;
-        top: 297px;
+        top: 247px;
         width: 148px;
     }
 
@@ -240,7 +240,7 @@
         background-position: 0 -108px;
         height: 219px;
         left: 0;
-        top: 404px;
+        top: 354px;
         width: 131px;
     }
 
@@ -248,7 +248,7 @@
         background-position: -131px -108px;
         height: 109px;
         left: 131px;
-        top: 404px;
+        top: 354px;
         width: 134px;
     }
 
@@ -256,7 +256,7 @@
         background-position: -131px -217px;
         height: 110px;
         left: 131px;
-        top: 513px;
+        top: 463px;
         width: 266px;
     }
 
@@ -264,7 +264,7 @@
         background-position: -397px -299px;
         height: 29px;
         left: 398px;
-        top: 595px;
+        top: 545px;
         width: 148px;
     }
 
