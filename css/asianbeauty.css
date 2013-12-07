@@ -52,7 +52,7 @@ p {
 
 .list {
     list-style: disc none outside;
-    margin: 0 0 20px 15px;
+    margin: 0 0 15px 15px;
     padding: 0 15px;
 }
 
@@ -69,12 +69,12 @@ p {
 /* Header */
 
 #header {
+    background: #fff url(../img/header-border.jpg) repeat-x 0 100%;
     padding-bottom: 5px;
     z-index: 6;
 }
 
-body.parallax #header {
-    background: #fff url(../img/header-border.jpg) repeat-x 0 100%;
+.parallax #header {
     left: 0;
     position: fixed;
     top: 0;
@@ -180,7 +180,7 @@ body.parallax #header {
 }
 
     #who-exhibits .exhibits-content {
-        margin: 120px 0 0 560px;
+        margin: 100px 0 0 560px;
         width: 395px;
     }
 
@@ -205,7 +205,7 @@ body.parallax #header {
     #who-exhibits .exhibits-text-highlight {
         background: #dc7145;
         color: #fff;
-        font-size: 1.7em;
+        font-size: 1.63em;
         line-height: 1em;
         display: block;
         padding: 5px 10px;
@@ -229,7 +229,7 @@ body.parallax #header {
         background-position: 0 0;
         height: 108px;
         left: 0;
-        top: 232px;
+        top: 212px;
         width: 265px;
     }
 
@@ -237,7 +237,7 @@ body.parallax #header {
         background-position: -265px 0;
         height: 217px;
         left: 265px;
-        top: 232px;
+        top: 212px;
         width: 132px;
     }
 
@@ -245,7 +245,7 @@ body.parallax #header {
         background-position: -397px 0;
         height: 298px;
         left: 397px;
-        top: 232px;
+        top: 212px;
         width: 148px;
     }
 
@@ -253,7 +253,7 @@ body.parallax #header {
         background-position: 0 -108px;
         height: 219px;
         left: 0;
-        top: 339px;
+        top: 319px;
         width: 131px;
     }
 
@@ -261,7 +261,7 @@ body.parallax #header {
         background-position: -131px -108px;
         height: 109px;
         left: 131px;
-        top: 339px;
+        top: 319px;
         width: 134px;
     }
 
@@ -269,7 +269,7 @@ body.parallax #header {
         background-position: -131px -217px;
         height: 110px;
         left: 131px;
-        top: 463px;
+        top: 428px;
         width: 266px;
     }
 
@@ -277,100 +277,116 @@ body.parallax #header {
         background-position: -397px -299px;
         height: 29px;
         left: 398px;
-        top: 545px;
+        top: 510px;
         width: 148px;
     }
 
 #visitor {
-    background: url(../img/visitor-bg.jpg) 50% 0 no-repeat fixed;
+    background: url(../img/visitor-detail-bg.jpg) 0 0 no-repeat;
     height: 981px;
     position: relative;
     z-index: 3;
 }
 
-    #visitor .visitor-content {
-        margin: 195px 0 0 0;
+.parallax #visitor {
+    background: url(../img/visitor-bg.jpg) 50% 0 no-repeat fixed;
+}
+
+    .parallax #visitor .visitor-content {
+        margin: 155px 0 0 0;
         width: 380px;
     }
 
-    #visitor .visitor-title {
-        background-position: 0 -227px;
-        height: 103px;
-        margin-bottom: 20px;
-        width: 378px;
-    }
+#visitor .visitor-content {
+    margin: 45px 0 0 0;
+    width: 380px;
+}
 
-    #visitor .visitor-link {
-        background-color: #ff9966;
-        color: #fff;
-        font-size: 1.25em;
-        padding: 5px 15px;
-    }
+#visitor .visitor-title {
+    background-position: 0 -227px;
+    height: 103px;
+    margin-bottom: 20px;
+    width: 378px;
+}
 
-    #visitor .visitor-img-container {
-        background-color: #d5d1bd;
-        height: 490px;
-        margin-top: 175px;
-        position: relative;
-        width: 500px;
-    }
+#visitor .visitor-title-2 {
+    background-position: 0 -606px;
+    height: 74px;
+    margin-bottom: 5;
+    width: 270px;
+}
 
-    #visitor .visitor-img {
-        background: url(../img/visitor-imgs.jpg) no-repeat;
-        top: 0;
-        position: absolute;
-    }
+#visitor .visitor-link {
+    background-color: #ff9966;
+    color: #fff;
+    font-size: 1.25em;
+    padding: 5px 15px;
+}
 
-    #visitor .el1 {
-        background-position: 0 0;
-        height: 276px;
-        left: 0;
-        width: 93px;
-    }
+#visitor .visitor-img-container {
+    background-color: #d5d1bd;
+    height: 490px;
+    margin-top: 155px;
+    position: relative;
+    width: 500px;
+}
 
-    #visitor .el2 {
-        background-position: -99px 0;
-        height: 276px;
-        left: 99px;
-        width: 96px;
-    }
+#visitor .visitor-img {
+    background: url(../img/visitor-imgs.jpg) no-repeat;
+    top: 0;
+    position: absolute;
+}
 
-    #visitor .el3 {
-        background-position: -202px 0;
-        height: 276px;
-        left: 202px;
-        width: 95px;
-    }
+#visitor .el1 {
+    background-position: 0 0;
+    height: 276px;
+    left: 0;
+    width: 93px;
+}
 
-    #visitor .el4 {
-        background-position: -305px 0;
-        height: 276px;
-        left: 305px;
-        width: 94px;
-    }
+#visitor .el2 {
+    background-position: -99px 0;
+    height: 276px;
+    left: 99px;
+    width: 96px;
+}
 
-    #visitor .el5 {
-        background-position: 100% 0;
-        height: 276px;
-        left: 407px;
-        width: 94px;
-    }
+#visitor .el3 {
+    background-position: -202px 0;
+    height: 276px;
+    left: 202px;
+    width: 95px;
+}
 
-    #visitor .el6 {
-        background-position: 0 -281px;
-        height: 209px;
-        left: 0px;
-        top: 281px;
-        width: 297px;
-    }
+#visitor .el4 {
+    background-position: -305px 0;
+    height: 276px;
+    left: 305px;
+    width: 94px;
+}
 
-    #visitor .el7 {
-        background-position: 100% -281px;
-        height: 209px;
-        left: 305px;
-        top: 281px;
-        width: 196px;
-    }
+#visitor .el5 {
+    background-position: 100% 0;
+    height: 276px;
+    left: 407px;
+    width: 94px;
+}
+
+#visitor .el6 {
+    background-position: 0 -281px;
+    height: 209px;
+    left: 0px;
+    top: 281px;
+    width: 297px;
+}
+
+#visitor .el7 {
+    background-position: 100% -281px;
+    height: 209px;
+    left: 305px;
+    top: 281px;
+    width: 196px;
+}
 
 #about {
     background: url(../img/about-bg.jpg) 50% 0 no-repeat fixed;
