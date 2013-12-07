@@ -180,7 +180,7 @@ body.parallax #header {
 }
 
     #who-exhibits .exhibits-content {
-        margin: 135px 0 0 560px;
+        margin: 120px 0 0 560px;
         width: 395px;
     }
 
@@ -229,7 +229,7 @@ body.parallax #header {
         background-position: 0 0;
         height: 108px;
         left: 0;
-        top: 247px;
+        top: 232px;
         width: 265px;
     }
 
@@ -237,7 +237,7 @@ body.parallax #header {
         background-position: -265px 0;
         height: 217px;
         left: 265px;
-        top: 247px;
+        top: 232px;
         width: 132px;
     }
 
@@ -245,7 +245,7 @@ body.parallax #header {
         background-position: -397px 0;
         height: 298px;
         left: 397px;
-        top: 247px;
+        top: 232px;
         width: 148px;
     }
 
@@ -253,7 +253,7 @@ body.parallax #header {
         background-position: 0 -108px;
         height: 219px;
         left: 0;
-        top: 354px;
+        top: 339px;
         width: 131px;
     }
 
@@ -261,7 +261,7 @@ body.parallax #header {
         background-position: -131px -108px;
         height: 109px;
         left: 131px;
-        top: 354px;
+        top: 339px;
         width: 134px;
     }
 
@@ -289,7 +289,7 @@ body.parallax #header {
 }
 
     #visitor .visitor-content {
-        margin: 215px 0 0 0;
+        margin: 195px 0 0 0;
         width: 380px;
     }
 
@@ -501,12 +501,14 @@ body.parallax #header {
     }
 
     .home-detail-top .content-right .sub-title-up {
-        font-size: 0.9em;
+        font-size: 1.3em;
+        font-weight: lighter;
         margin: 0;
         text-align: right;
     }
 
     .home-detail-top .content-right p {
+        font-size: 1.1em;
         line-height: 1.2em;
         margin: 0;
         text-align: justify;
@@ -524,7 +526,8 @@ body.parallax #header {
     }
 
     .home-detail-bottom p {
-        line-height: 1.2em;
+        font-size: 1em;
+        line-height: 1.1em;
         margin: 0 0 5px 0;
         text-align: justify;
     }
