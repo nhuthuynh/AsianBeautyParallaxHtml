@@ -8,6 +8,10 @@ p {
     padding: 0;
 }
 
+address {
+    font-style: normal;
+}
+
 #header, #main, #footer {
     min-width: 1280px;
     margin: 0;
@@ -62,7 +66,7 @@ p {
 }
 
 [class*="-content"] p {
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 1.1em;
     margin: 5px 0;
 }
@@ -283,7 +287,7 @@ p {
 
 #visitor {
     background: url(../img/visitor-detail-bg.jpg) 0 0 no-repeat;
-    height: 981px;
+    height: 804px;
     position: relative;
     z-index: 3;
 }
@@ -298,7 +302,7 @@ p {
     }
 
 #visitor .visitor-content {
-    margin: 45px 0 0 0;
+    margin: 25px 0 0 0;
     width: 380px;
 }
 
@@ -468,7 +472,7 @@ p {
 /* Home detail */
 
 .home-detail-top {
-    background-color: #ff9966;
+    background: #ff9966 url(../img/home-detail-top-bg.jpg) no-repeat 100% 100%;
     color: #fff;
     min-height: 318px;
     padding: 20px 0;
@@ -577,3 +581,121 @@ p {
     .home-detail-bottom .img-bottom-2 {
         right: 0;
     }
+
+/* contact us */
+#contact {
+    background: url(../img/contact-detail-bg.jpg) no-repeat 0 0;
+    height: 715px;
+}
+
+#contact .title {
+    border-bottom: 1px solid #59595b;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+
+#contact .contact-info {
+    color: #59595b;
+    padding: 0 30px 0 15px;
+    width: 235px;
+}
+
+#contact .form {
+    border-left: 1px solid #59595b;
+    padding: 0 0 0 40px;
+    width: 675px;
+}
+
+.contact-info .company-name {
+    font-size: 1.2em;
+}
+
+.contact-info [class*="company-"]:before {
+    font-family: 'myriad_probold_condensed', Helvetica, sans-serif;
+}
+
+.contact-info .gap {
+    margin-bottom: 20px;
+}
+
+.contact-info .company-address:before {
+    content: "Address: ";
+}
+
+.contact-info .company-tel:before {
+    content: "Tel: ";
+}
+
+.contact-info .company-fax:before {
+    content: "Fax: ";
+}
+
+.contact-info .company-email:before {
+    content: "Email: ";
+}
+
+.contact-info .indent {
+    padding-left: 38px;
+}
+
+.contact-info .company-person:before {
+    content: "Contact person: ";
+}
+
+.form .question {
+    font-size: 1.2em;
+}
+
+/* Form Control */
+
+.control {
+    background: none;
+    border: none;
+}
+
+.lbl {
+    color: #566381;
+}
+
+.required:after {
+    content: " (required)";
+    font-style: italic;
+}
+
+.input-text, .text-field {
+    background-color: #f8f8f8;
+    border: 1px solid #ebebeb;
+}
+
+.input-text {
+    height: 25px;
+    line-height: 25px;
+    width: 305px;
+}
+
+.text-field {
+    height: 100px;
+    width: 100%;
+}
+
+.btn {
+    background-color: #cf1e38;
+    border-color: #e4808f;
+    color: #fff;
+    font-size: 0.9em;
+    height: 29px;
+    letter-spacing: 0.5px;
+    line-height: 29px;
+    padding: 0 15px;
+    text-transform: uppercase;
+}
+
+.gap-bottom {
+    margin-bottom: 20px;
+}
+.gap-right {
+    margin-right: 25px;
+}
+.table-form {
+    border-collapse: separate;
+}
