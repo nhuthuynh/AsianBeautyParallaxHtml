@@ -56,7 +56,7 @@ address {
 
 .list {
     list-style: disc none outside;
-    margin: 0 0 15px 15px;
+    margin: 0 0 5px 15px;
     padding: 0 15px;
 }
 
@@ -108,7 +108,7 @@ address {
     padding: 0 18px 0 12px;
 }
 
-    .navbar .nav-item:hover, .navbar .nav-item:focus, .navbar .nav-item.active {
+    .navbar li:hover .nav-item, .navbar li:focus .nav-item, .navbar li.active .nav-item {
         color: #2e3192;
     }
 
@@ -184,7 +184,7 @@ address {
 }
 
     #who-exhibits .exhibits-content {
-        margin: 100px 0 0 560px;
+        margin: 140px 0 0 560px;
         width: 395px;
     }
 
@@ -226,63 +226,11 @@ address {
 
     #who-exhibits .exhibits-img {
         background: url(../img/exhibits-imgs.jpg) no-repeat;
+        height: 327px;
+        left: 0;
         position: absolute;
-    }
-
-    #who-exhibits .el1 {
-        background-position: 0 0;
-        height: 108px;
-        left: 0;
-        top: 212px;
-        width: 265px;
-    }
-
-    #who-exhibits .el2 {
-        background-position: -265px 0;
-        height: 217px;
-        left: 265px;
-        top: 212px;
-        width: 132px;
-    }
-
-    #who-exhibits .el3 {
-        background-position: -397px 0;
-        height: 298px;
-        left: 397px;
-        top: 212px;
-        width: 148px;
-    }
-
-    #who-exhibits .el4 {
-        background-position: 0 -108px;
-        height: 219px;
-        left: 0;
-        top: 319px;
-        width: 131px;
-    }
-
-    #who-exhibits .el5 {
-        background-position: -131px -108px;
-        height: 109px;
-        left: 131px;
-        top: 319px;
-        width: 134px;
-    }
-
-    #who-exhibits .el6 {
-        background-position: -131px -217px;
-        height: 110px;
-        left: 131px;
-        top: 428px;
-        width: 266px;
-    }
-
-    #who-exhibits .el7 {
-        background-position: -397px -299px;
-        height: 29px;
-        left: 398px;
-        top: 510px;
-        width: 148px;
+        top: 252px;
+        width: 545px;
     }
 
 #visitor {
@@ -323,73 +271,24 @@ address {
 #visitor .visitor-link {
     background-color: #ff9966;
     color: #fff;
+    display: block;
     font-size: 1.25em;
+    margin-top: 10px;
     padding: 5px 15px;
+    width: 65px;
 }
 
 #visitor .visitor-img-container {
-    background-color: #d5d1bd;
-    height: 490px;
-    margin-top: 155px;
-    position: relative;
-    width: 500px;
-}
-
-#visitor .visitor-img {
     background: url(../img/visitor-imgs.jpg) no-repeat;
-    top: 0;
-    position: absolute;
+    height: 525px;
+    margin-top: 150px;
+    position: relative;
+    width: 540px;
 }
 
-#visitor .el1 {
-    background-position: 0 0;
-    height: 276px;
-    left: 0;
-    width: 93px;
-}
-
-#visitor .el2 {
-    background-position: -99px 0;
-    height: 276px;
-    left: 99px;
-    width: 96px;
-}
-
-#visitor .el3 {
-    background-position: -202px 0;
-    height: 276px;
-    left: 202px;
-    width: 95px;
-}
-
-#visitor .el4 {
-    background-position: -305px 0;
-    height: 276px;
-    left: 305px;
-    width: 94px;
-}
-
-#visitor .el5 {
-    background-position: 100% 0;
-    height: 276px;
-    left: 407px;
-    width: 94px;
-}
-
-#visitor .el6 {
-    background-position: 0 -281px;
-    height: 209px;
-    left: 0px;
-    top: 281px;
-    width: 297px;
-}
-
-#visitor .el7 {
-    background-position: 100% -281px;
-    height: 209px;
-    left: 305px;
-    top: 281px;
-    width: 196px;
+.parallax #visitor .visitor-img-container {
+    height: 490px;
+    width: 500px;
 }
 
 #about {
@@ -408,7 +307,8 @@ address {
     width: 480px;
 }
 
-    .about-content .content-left .about-title {
+    .about-content .content-left .about-title, 
+    #about-detail .about-title {
         background-position: 0 -465px;
         font-size: 2.5em;
         height: 73px;
@@ -418,7 +318,8 @@ address {
         width: 235px;
     }
 
-        .about-content .content-left .about-title:after {
+        .about-content .content-left .about-title:after,
+        #about-detail .about-title:after {
             background: url(../img/logo_ubm.png) no-repeat 0 0;
             content: "";
             display: block;
@@ -698,4 +599,139 @@ address {
 }
 .table-form {
     border-collapse: separate;
+}
+
+/* about us */
+#about-detail {
+    background: url(../img/about-detail-bg-left.jpg) no-repeat left bottom, url(../img/about-detail-bg-right.jpg) no-repeat right top;
+    min-height: 768px;
+    color: #59595b;
+    transition: height .5s ease;
+    -moz-transition: height .5s ease;
+    -ms-transition: height .5s ease;
+    -o-transition: height .5s ease;
+    -webkit-transition: height .5s ease;
+}
+
+#about-detail .nav-tabs {
+    border-bottom: 1px solid #a9a9a9;
+    margin: 65px 0 0 0;
+    padding: 0 0 0 10px;
+}
+
+#about-detail .nav-tabs li {
+    display: inline-block;
+}
+
+#about-detail .nav-tabs .active {
+    margin-bottom: -1px;   
+}
+
+#about-detail .tab-item {
+    background-color: #eee;
+    border: 1px solid #a9a9a9;
+    color: #59595b;
+    font-size: 0.85em;
+    margin-right: 5px;
+    padding: 5px 15px 2px 15px;
+}
+
+#about-detail .nav-tabs .active .tab-item {
+    background-color: #fff;
+    border-bottom-color: transparent;
+    border-top-color: #2e3192;
+}
+
+.tab-content .tab-pane {
+    display: none;
+    overflow: hidden;
+}
+
+.tab-content .active {
+    display: block;
+}
+
+.fade {
+    transition: opacity .25s linear;
+    -moz-transition: opacity .25s linear;
+    -ms-transition: opacity .25s linear;
+    -o-transition: opacity .25s linear;
+    -webkit-transition: opacity .25s linear;
+    opacity: 0;
+}
+
+.in {
+    opacity: 1;
+}
+
+#about-detail .about-title {
+    margin: 35px 0 25px 0;
+}
+
+#about-detail .gap-bottom {
+    margin-bottom: 25px;
+}
+
+#about-detail .why-thailand-content {
+    padding-top: 95px;
+}
+
+#about-detail .why-thailand-img {
+    margin: 0 80px 200px 0;
+    overflow: hidden;
+    width: 460px;
+}
+
+.why-thailand-content .about-title-whythailand {
+    background-position: 0 -784px;
+    height: 133px;
+    margin-left: -10px;
+    width: 389px;
+}
+
+.why-thailand-content p,
+.about-thailand-content p {
+    font-size: 1em;
+    margin: 0 0 5px 0;
+    text-align: justify;
+}
+
+#about-detail .about-thailand-content {
+    padding-top: 20px;
+}
+
+.about-thailand-content .about-thailand-title {
+    background-position: 0 -680px;
+    height: 103px;
+    margin: 0 0 20px 450px;
+    width: 460px;
+}
+
+.about-thailand-content .content-left {
+    margin: 0 105px 0 15px;
+    width: 430px;
+}
+
+.about-thailand-content .content-right {
+    width: 430px;
+}
+
+
+.about-thailand-content .name {
+    font-size: 1.65em;
+    margin: 0 0 5px 0;
+}
+
+.about-thailand-content .list {
+    margin: 0 0 5px 10px;
+    padding: 0 5px;
+}
+
+.about-thailand-content li {
+    color: #59595b;
+}
+
+.about-thailand-content .sub-list-item:before {
+    color: #59595b;
+    content: "-  ";
 }
