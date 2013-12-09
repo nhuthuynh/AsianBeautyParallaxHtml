@@ -27,8 +27,7 @@ $(document).bind('ready', function () {
     if (window.location.href.indexOf('index.html') == -1) {
         $('#nav .navbar .nav-item').bind('click', function (e) {
             e.preventDefault();
-            var href = $(this).attr('href')
-            href = href.indexOf('intro') > -1 ? 'index.html' : href;
+            var href = $(this).attr('data-inside-link')
             window.location = href;
             return false;
         })
