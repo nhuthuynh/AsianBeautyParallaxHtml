@@ -137,7 +137,7 @@
         var selector = $(e.target).attr('href')
         selector = selector && selector.replace(/.*(?=#[^\s]*$)/, '') //strip for ie7
         var h = $(selector).outerHeight();
-        h = h + 50 > 1188 ? 1188 : h + 50;
+        h = h + 50 > 1188 ? 1188 : h + (selector == "#about-thailand" ? 140 : 50);
 
         $('#about-detail').css('height', h);
     })

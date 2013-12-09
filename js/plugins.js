@@ -1,7 +1,7 @@
 // Avoid `console` errors in browsers that lack a console.
-(function() {
+(function () {
     var method;
-    var noop = function () {};
+    var noop = function () { };
     var methods = [
         'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
         'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
@@ -19,6 +19,18 @@
             console[method] = noop;
         }
     }
-}());
+} ());
 
 // Place any jQuery/helper plugins in here.
+
+$(document).bind('ready', function () {
+    if (window.location.href.indexOf('index.html') == -1) {
+        $('#nav .navbar .nav-item').bind('click', function (e) {
+            e.preventDefault();
+            var href = $(this).attr('href')
+            href = href.indexOf('intro') > -1 ? 'index.html' : href;
+            window.location = href;
+            return false;
+        })
+    }
+});
