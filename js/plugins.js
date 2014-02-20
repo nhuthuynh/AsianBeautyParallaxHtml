@@ -22,13 +22,3 @@
 } ());
 
 // Place any jQuery/helper plugins in here.
-
-$(document).bind('ready', function () {
-    if (window.location.href.indexOf('index.html') == -1) {
-        $('#nav .navbar .nav-item').click(function (e) {
-            e.preventDefault();
-            window.location = $(this).attr('data-inside-link');
-            return false;
-        })
-    }
-});

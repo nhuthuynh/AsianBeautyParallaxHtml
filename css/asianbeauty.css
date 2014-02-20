@@ -110,7 +110,7 @@ address {
 
     .navbar li:hover .nav-item, .navbar li:focus .nav-item, .navbar li.active .nav-item {
         color: #2e3192;
-		cursor: pointer
+		cursor: pointer;
     }
 
 .navbar li:last-child .nav-item {
