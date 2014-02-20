@@ -11,7 +11,7 @@
 *
 * Requires: 1.2.2+
 */
-(function (a) { function d(b) { var c = b || window.event, d = [].slice.call(arguments, 1), e = 0, f = !0, g = 0, h = 0; return b = a.event.fix(c), b.type = "mousewheel", c.wheelDelta && (e = c.wheelDelta / 120), c.detail && (e = -c.detail / 3), h = e, c.axis !== undefined && c.axis === c.HORIZONTAL_AXIS && (h = 0, g = -1 * e), c.wheelDeltaY !== undefined && (h = c.wheelDeltaY / 120), c.wheelDeltaX !== undefined && (g = -1 * c.wheelDeltaX / 120), d.unshift(b, e, g, h), (a.event.dispatch || a.event.handle).apply(this, d) } var b = ["DOMMouseScroll", "mousewheel"]; if (a.event.fixHooks) for (var c = b.length; c; ) a.event.fixHooks[b[--c]] = a.event.mouseHooks; a.event.special.mousewheel = { setup: function () { if (this.addEventListener) for (var a = b.length; a; ) this.addEventListener(b[--a], d, !1); else this.onmousewheel = d }, teardown: function () { if (this.removeEventListener) for (var a = b.length; a; ) this.removeEventListener(b[--a], d, !1); else this.onmousewheel = null } }, a.fn.extend({ mousewheel: function (a) { return a ? this.bind("mousewheel", a) : this.trigger("mousewheel") }, unmousewheel: function (a) { return this.unbind("mousewheel", a) } }) })(jQuery);
+(function (a) { function d(b) { var c = b || window.event, d = [].slice.call(arguments, 1), e = 0, f = !0, g = 0, h = 0; return b = a.event.fix(c), b.type = "mousewheel", c.wheelDelta && (e = c.wheelDelta / 120), c.detail && (e = -c.detail / 3), h = e, c.axis !== undefined && c.axis === c.HORIZONTAL_AXIS && (h = 0, g = -1 * e), c.wheelDeltaY !== undefined && (h = c.wheelDeltaY / 120), c.wheelDeltaX !== undefined && (g = -1 * c.wheelDeltaX / 120), d.unshift(b, e, g, h), (a.event.dispatch || a.event.handle).apply(this, d) } var b = ["DOMMouseScroll", "mousewheel"]; if (a.event.fixHooks) for (var c = b.length; c;) a.event.fixHooks[b[--c]] = a.event.mouseHooks; a.event.special.mousewheel = { setup: function () { if (this.addEventListener) for (var a = b.length; a;) this.addEventListener(b[--a], d, !1); else this.onmousewheel = d }, teardown: function () { if (this.removeEventListener) for (var a = b.length; a;) this.removeEventListener(b[--a], d, !1); else this.onmousewheel = null } }, a.fn.extend({ mousewheel: function (a) { return a ? this.bind("mousewheel", a) : this.trigger("mousewheel") }, unmousewheel: function (a) { return this.unbind("mousewheel", a) } }) })(jQuery);
 
 
 
@@ -109,19 +109,26 @@ $(document).bind('ready', function () {
         verticalScrolling: true
     });
 
-    section.waypoint(function (ev, direction) {
-        dataslide = $(this).attr('data-slide');
-        $('.nav-item[href*=' + dataslide + ']', nav).parent().addClass('active').siblings().removeClass('active');
-    }, { offset: 108 });
+    //section.waypoint(function (ev, direction) {
+    //    var dataslide = $(this).attr('data-slide');
 
-    links.bind('click', function (e) {
-        e.preventDefault();
-        if ($('#' + $(this).attr('href')).length == 0) {
-            window.location.href = $(this).attr('href');
-        }
-        else AB.slide.goScroll($(this).attr('href'));
+    //    return false;
+    //}, { offset: 108 });
+
+    links.click(function (e) {
+
+        links.parent().removeClass('active');
+        $(this).parent().addClass('active');
+
+        var href = $(this).attr('data-section');
+        if (href.indexOf('.html') != -1)
+            window.location.href = $(this).attr('data-section');
+        else
+            AB.slide.goScroll($(this).attr('data-section'));
+		e.preventDefault();
+		e.stopPropagation();
         return false;
-    })
+    });
 
     var AB = {};
 
@@ -171,12 +178,15 @@ $(document).bind('ready', function () {
             }
             this.currentSection = $.inArray(target, this.sections);
             this.scrollReady = false;
+            links.parent().removeClass('active');
+            $('a[data-section*="' + target + '"]', '.navbar').parent().addClass('active');
             if (target == 'footer') {
                 // Scroll to top of footer or bottom of page depending on screen height;
                 var newYPos = $(document).height() - $win.height();
                 var footerTop = $(document).height() - ($('#footer').height());
                 newYPos = (footerTop < newYPos) ? footerTop : newYPos;
                 this.currentSection = this.sections.length;
+                $('a[data-section*="about"]', '.navbar').parent().addClass('active');
             } else {
                 var newYPos = Math.ceil($('#' + target).offset().top);
             }
@@ -191,6 +201,8 @@ $(document).bind('ready', function () {
                   AB.slide.scrollReady = true
               }
             );
+			
+			return false;
         }
     }
 

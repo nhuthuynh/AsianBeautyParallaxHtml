@@ -25,10 +25,9 @@
 
 $(document).bind('ready', function () {
     if (window.location.href.indexOf('index.html') == -1) {
-        $('#nav .navbar .nav-item').bind('click', function (e) {
+        $('#nav .navbar .nav-item').click(function (e) {
             e.preventDefault();
-            var href = $(this).attr('data-inside-link')
-            window.location = href;
+            window.location = $(this).attr('data-inside-link');
             return false;
         })
     }
