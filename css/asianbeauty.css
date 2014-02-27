@@ -649,7 +649,8 @@ address {
 }
 
 .tab-content .active {
-    display: block;
+	display: block;
+	text-align: justify;
 }
 
 .fade {
