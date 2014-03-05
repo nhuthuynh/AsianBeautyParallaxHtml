@@ -66,7 +66,7 @@ address {
 }
 
 [class*="-content"] p {
-    font-size: 1.1em;
+    font-size: 1em;
     line-height: 1.1em;
     margin: 5px 0;
 }
@@ -171,7 +171,7 @@ address {
         background-color: #2e3192;
         color: #fff;
         display: inline-block;
-        font-size: 1.2em;
+        font-size: 1em;
         margin-top: 10px;
         padding: 5px 15px;
         width: 90px;
@@ -215,13 +215,13 @@ address {
     }
 
     #who-exhibits .line1 {
-        font-size: 1.2em;
+        font-size: 1em;
 		display: inline-block;
 		max-width: 180px;
     }
 
     #who-exhibits .line2 {
-        font-size: 1.5em;
+        font-size: 1.3em;
 		height: auto;
 		display: block;
         width: 305px;
@@ -275,7 +275,7 @@ address {
     background-color: #ff9966;
     color: #fff;
     display: block;
-    font-size: 1.25em;
+    font-size: 1.05em;
     margin-top: 10px;
     padding: 5px 15px;
     width: 65px;
@@ -352,7 +352,7 @@ address {
 }
 
 .about-content p {
-    font-size: 1.1em;
+    font-size: 1em;
     margin-bottom: 25px;
     text-align: justify;
 }
