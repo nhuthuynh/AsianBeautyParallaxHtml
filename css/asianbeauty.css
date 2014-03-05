@@ -1,5 +1,5 @@
 ﻿html, body {
-    font-family: 'myriad_procondensed', Helvetica, sans-serif;
+    font-family: 'open_sansregular', Helvetica, sans-serif;
 }
 
 p {
@@ -104,8 +104,8 @@ address {
 }
 
 .navbar .nav-item {
-    font-size: 1.2em;
-    padding: 0 18px 0 12px;
+    font-size: 1.1em;
+    padding: 0 10px;
 }
 
     .navbar li:hover .nav-item, .navbar li:focus .nav-item, .navbar li.active .nav-item {
@@ -515,7 +515,7 @@ address {
 }
 
 .contact-info [class*="company-"]:before {
-    font-family: 'myriad_probold_condensed', Helvetica, sans-serif;
+    font-family: 'open_sansbold', Helvetica, sans-serif;
 }
 
 .contact-info .gap {
