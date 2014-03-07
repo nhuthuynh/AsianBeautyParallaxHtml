@@ -238,7 +238,8 @@ address {
 
 #visitor {
     background: url(../img/visitor-detail-bg.jpg) 0 0 no-repeat;
-    height: 804px;
+	background-size: 100% 100%;
+	
     position: relative;
     z-index: 3;
 }
@@ -407,14 +408,14 @@ address {
 
     .home-detail-top .content-left .exhibit-date {
         bottom: 35px;
-        font-size: 1.8em;
+        font-size: 1.5em;
         width: 189px;
     }
 
     .home-detail-top .content-left .exhibit-location {
         bottom: -10px;
-        font-size: 1.6em;
-        width: 454px;
+        font-size: 1.3em;
+        width: 520px;
     }
 
     .home-detail-top .content-right .main-title {
@@ -466,7 +467,7 @@ address {
     }
 
     .home-detail-bottom [class*="content-"] {
-        height: 335px;
+        height: 435px;
         padding-bottom: 200px;
         position: relative;
         width: 475px;
