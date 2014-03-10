@@ -606,7 +606,7 @@ address {
 }
 
 /* about us */
-#about-detail {
+#about-detail, #press-detail {
     background: url(../img/about-detail-bg-left.jpg) no-repeat left bottom, url(../img/about-detail-bg-right.jpg) no-repeat right top;
     min-height: 768px;
     color: #59595b;
@@ -739,4 +739,12 @@ address {
 .about-thailand-content .sub-list-item:before {
     color: #59595b;
     content: "-  ";
+}
+
+#press-detail {
+	padding: 20px 0;
+}
+
+#press-detail  .press-img{
+	margin: 10px 0;
 }
