@@ -84,7 +84,21 @@ address {
     top: 0;
 }
 
+#header .container {
+    z-index: 2;
+}
+
+.menu-bg {
+    background-color: #2e3192;
+    height: 38px;
+    position: absolute;
+    top: 39px;
+    width: 100%;
+    z-index: 1;
+}
+
 #nav {
+    overflow: hidden;
     padding-top: 25px;
 }
 
@@ -94,31 +108,33 @@ address {
     }
 
     #nav .navbar {
-        border-bottom: 2px solid #2e3192;
         margin-top: 20px;
         padding-bottom: 10px;
     }
 
 .navbar li {
     display: inline-block;
+    min-height: 20px;
+    vertical-align: middle;
 }
 
 .navbar .nav-item {
-    font-size: 1.1em;
-    padding: 0 10px;
+    color: #fff;
+    font-size: .9em;
+    padding: 0 5px;
 }
 
-    .navbar li:hover .nav-item, .navbar li:focus .nav-item, .navbar li.active .nav-item {
-        color: #2e3192;
-		cursor: pointer;
-    }
+.navbar li:hover .nav-item, .navbar li:focus .nav-item, .navbar li.active .nav-item {
+    /*color: #2e3192;*/
+    cursor: pointer;
+}
 
 .navbar li:last-child .nav-item {
     padding-right: 0;
 }
 
 .navbar .home {
-    background: url(../img/icons.png) no-repeat 0 0;
+    background: url(../img/icons_home_2.png) no-repeat 0 0;
     display: block;
     height: 20px;
     margin: 0 12px;
@@ -216,14 +232,14 @@ address {
 
     #who-exhibits .line1 {
         font-size: 1em;
-		display: inline-block;
-		max-width: 180px;
+        display: inline-block;
+        max-width: 180px;
     }
 
     #who-exhibits .line2 {
         font-size: 1.3em;
-		height: auto;
-		display: block;
+        height: auto;
+        display: block;
         width: 305px;
     }
 
@@ -238,8 +254,7 @@ address {
 
 #visitor {
     background: url(../img/visitor-detail-bg.jpg) 0 0 no-repeat;
-	background-size: 100% 100%;
-	
+    background-size: 100% 100%;
     position: relative;
     z-index: 3;
 }
@@ -311,7 +326,7 @@ address {
     width: 480px;
 }
 
-    .about-content .content-left .about-title, 
+    .about-content .content-left .about-title,
     #about-detail .about-title {
         background-position: 0 -465px;
         font-size: 2.5em;
@@ -493,23 +508,23 @@ address {
     height: 715px;
 }
 
-#contact .title {
-    border-bottom: 1px solid #59595b;
-    margin-bottom: 20px;
-    padding-bottom: 15px;
-}
+    #contact .title {
+        border-bottom: 1px solid #59595b;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+    }
 
-#contact .contact-info {
-    color: #59595b;
-    padding: 0 30px 0 15px;
-    width: 235px;
-}
+    #contact .contact-info {
+        color: #59595b;
+        padding: 0 30px 0 15px;
+        width: 235px;
+    }
 
-#contact .form {
-    border-left: 1px solid #59595b;
-    padding: 0 0 0 40px;
-    width: 675px;
-}
+    #contact .form {
+        border-left: 1px solid #59595b;
+        padding: 0 0 0 40px;
+        width: 675px;
+    }
 
 .contact-info .company-name {
     font-size: 1.2em;
@@ -598,9 +613,11 @@ address {
 .gap-bottom {
     margin-bottom: 20px;
 }
+
 .gap-right {
     margin-right: 25px;
 }
+
 .table-form {
     border-collapse: separate;
 }
@@ -617,34 +634,34 @@ address {
     -webkit-transition: height .5s ease;
 }
 
-#about-detail .nav-tabs {
-    border-bottom: 1px solid #a9a9a9;
-    margin: 65px 0 0 0;
-    padding: 0 0 0 10px;
-}
+    #about-detail .nav-tabs {
+        border-bottom: 1px solid #a9a9a9;
+        margin: 65px 0 0 0;
+        padding: 0 0 0 10px;
+    }
 
-#about-detail .nav-tabs li {
-    display: inline-block;
-}
+        #about-detail .nav-tabs li {
+            display: inline-block;
+        }
 
-#about-detail .nav-tabs .active {
-    margin-bottom: -1px;   
-}
+        #about-detail .nav-tabs .active {
+            margin-bottom: 1px;
+        }
 
-#about-detail .tab-item {
-    background-color: #eee;
-    border: 1px solid #a9a9a9;
-    color: #59595b;
-    font-size: 0.85em;
-    margin-right: 5px;
-    padding: 5px 15px 2px 15px;
-}
+    #about-detail .tab-item {
+        background-color: #eee;
+        border: 1px solid #a9a9a9;
+        color: #59595b;
+        font-size: 0.85em;
+        margin-right: 5px;
+        padding: 5px 15px 2px 15px;
+    }
 
-#about-detail .nav-tabs .active .tab-item {
-    background-color: #fff;
-    border-bottom-color: transparent;
-    border-top-color: #2e3192;
-}
+    #about-detail .nav-tabs .active .tab-item {
+        background-color: #fff;
+        border-bottom-color: transparent;
+        border-top-color: #2e3192;
+    }
 
 .tab-content .tab-pane {
     display: none;
@@ -652,8 +669,8 @@ address {
 }
 
 .tab-content .active {
-	display: block;
-	text-align: justify;
+    display: block;
+    text-align: justify;
 }
 
 .fade {
@@ -742,9 +759,93 @@ address {
 }
 
 #press-detail {
-	padding: 20px 0;
+    padding: 20px 0;
 }
 
-#press-detail  .press-img{
-	margin: 10px 0;
+    #press-detail .press-img {
+        margin: 10px 0;
+    }
+
+#news {
+    background: url(../img/new_bg.jpg) no-repeat 0 -115px;
 }
+
+    #news .container {
+        padding: 30px 0;
+    }
+
+    #news .news-list {
+        width: 586px;
+    }
+
+    #news .news-item {
+        border-top: 1px solid #59595b;
+        padding: 15px 0 10px 0;
+    }
+
+    #news .news-list-title {
+        color: #59595b;
+        margin: 0 0 10px 0;
+    }
+
+    #news .news-img {
+        border: 1px solid #59595b;
+        display: block;
+        height: 79px;
+        margin: 0 5px 5px 0;
+        width: 135px;
+    }
+
+    #news .news-title {
+        color: #686868;
+        font-size: .95em;
+        line-height: 1.1em;
+        margin: 0 0 5px 0;
+    }
+
+    #news .news-desc {
+        color: #000;
+        font-size: .75em;
+    }
+
+    #news .readmore-link {
+        color: #000;
+    }
+
+    #news .news-date {
+        color: #ff9966;
+        font-size: .65em;
+        text-align: right;
+    }
+
+#news-detail {
+    background: url(../img/newsdetail-bg.jpg) no-repeat 0 -115px;
+}
+
+    #news-detail .container {
+        padding: 20px 0;
+    }
+
+    #news-detail .page-title {
+        border-bottom: 1px solid #59595b;
+        color: #59595b;
+        margin: 0 0 15px 0;
+        padding-bottom: 10px;
+    }
+
+    #news-detail .news-detail-date {
+        font-size: .35em;
+        margin-top: 20px;
+    }
+
+    #news-detail .news-detail-title {
+        color: #ff9966;
+        margin: 0 0 20px 0;
+    }
+
+    #news-detail p {
+        font-size: .9em;
+        line-height: 1.3em;
+        margin: 15px 0;
+        text-align: justify;
+    }
