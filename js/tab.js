@@ -136,10 +136,10 @@
     $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
         var selector = $(e.target).attr('href')
         selector = selector && selector.replace(/.*(?=#[^\s]*$)/, '') //strip for ie7
-        var h = $(selector).outerHeight();
-        h = h + 50 > 1528 ? 1528 : h + (selector == "#about-thailand" ? 140 : 50);
+        // var h = $(selector).outerHeight();
+        // h = h + 50 > 1528 ? 1528 : h + (selector == "#about-thailand" ? 140 : 50);
 
-        $('#about-detail').css('height', h);
+        // $('#about-detail').css('height', h);
     })
 
 } (jQuery);
