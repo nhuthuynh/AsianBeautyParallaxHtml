@@ -22,8 +22,8 @@ address {
 .container {
     margin: 0 auto;
     position: relative;
-    min-width: 998px;
-    width: 998px;
+    min-width: 1024px;
+    width: 1024px;
 }
 
 .text-bg {
@@ -133,16 +133,23 @@ address {
     padding-right: 0;
 }
 
-.navbar .home {
-    background: url(../img/icons_home_2.png) no-repeat 0 0;
-    display: block;
+.navbar .icon-link {
     height: 20px;
-    margin: 0 12px;
-    padding: 0;
+    display: block;
+    margin: 0 7px;
     overflow: hidden;
+    padding: 0;
     text-indent: 100%;
     white-space: nowrap;
     width: 21px;
+}
+
+.navbar .home {
+    background: url(../img/icons_home_2.png) no-repeat 0 0;
+}
+
+.navbar .face {
+    background: url(../img/fb_icon.jpg) no-repeat 0 0;
 }
 
 /* Main */
