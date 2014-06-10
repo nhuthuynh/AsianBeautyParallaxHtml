@@ -72,7 +72,8 @@ canvas,
 img,
 svg,
 video {
-    vertical-align: middle;
+	vertical-align: middle;
+	text-align: right;
 }
 
 /*

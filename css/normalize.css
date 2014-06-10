@@ -134,7 +134,8 @@ abbr[title] {
 
 b,
 strong {
-    font-weight: bold;
+	font-weight: bold;
+	font-size: 0.8em;
 }
 
 /**

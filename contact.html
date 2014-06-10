@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>ASEANbeauty - Contact</title>
-    <meta name="description" content="">
+    <meta name="description" content="Asean Beauty Show - The beauty trade show for industry professionals">
+	<meta name="keywords" content="ASEANbeauty, Asean Beauty Show, Beauty Show, Asean Show, Show, The beauty trade show for industry professionals">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
     <link rel="stylesheet" href="css/normalize.css">
@@ -40,56 +41,55 @@
                 <h1 class="title open-sansbold">Get in Touch</h1>
                 <address class="contact-info pull-left"">
                     <p class="company-name open-sansbold text-color-dark-gray gap">UBM Asia (Thailand) Co.,Ltd.</p>
-                    <p class="company-address gap">503/23 KSL Tower, 14th Floor, Sri Ayuthaya Road, Thanon Phayathai, Rajathewee, Bangkok 10400 Thailand</p>
+                    <p class="company-address gap">503/23 KSL Tower, 14th Floor, Sri Ayuthaya Road, Thanon Phayathai,Rajathewee, Bangkok 10400 Thailand</p>
                     <p class="company-tel">66 (0) 2642 6911 </p>
                     <p class="company-fax gap">66 (0) 2642 6919-20 </p>
                 <p class="company-person"><br />
                   Naruechol Bunpaiboon ( Sales Manager)<br>
-<strong>Email:</strong>Naruechol.B@ubm.com<br>
+<strong>Email:</strong> Naruechol.B@ubm.com<br>
 <br>
                 <p class="company-person"> <br>
-                  Ms.Punnipa Ounpikul (Tammy) <br />
-                      Junior Project Sales Executive and Support
-                        <br>
-                    <strong>Email:</strong>Punnipa.O@ubm.com                                         
+                  Ms.Nguyen Thi Nga (Susan)<br />
+                      Sales &amp; Marketing Manager<br>
+                    <strong>Email:</strong> nga.nguyen@ubm.com                                         
                 </address>
                 <div class="form pull-right">
                   <p class="question text-bold">Have an enquiry ?</p>
                     <p>Please fill this form, we will get back to you as soon as possible.</p>
-                    <form>
+                    <form action="contact.php" method="post" name="form1">
                         <table class="table-form">
                             <tr>
                                 <td><label class="control lbl required">Name:</label></td>
                                 <td><label class="control lbl required">Job Title: </label></td>
                             </tr>
                             <tr class="">
-                                <td><input id="name" class="control input-text gap-bottom gap-right" type="text" /></td>
-                                <td><input id="job-title" class="control input-text gap-bottom" type="text" /></td>
+                                <td><input id="name" class="control input-text gap-bottom gap-right" type="text" name="Name" /></td>
+                                <td><input id="job-title" class="control input-text gap-bottom" type="text" name="Job_Title" /></td>
                             </tr>
                             <tr>
                                 <td><label class="control lbl required">Company:</label></td>
                                 <td><label class="control lbl required">Email Address:</label></td>
                             </tr>
                             <tr>
-                                <td><input id="company" class="control input-text gap-bottom" type="text" /></td>
-                                <td><input id="email" class="control input-text gap-bottom" type="text" /></td>
+                                <td><input id="company" class="control input-text gap-bottom" type="text" name="Company" /></td>
+                                <td><input id="email" class="control input-text gap-bottom" type="text" name="Email" /></td>
                             </tr>
                             <tr>
                                 <td><label class="control lbl required">Telephone:</label></td>
                                 <td><label class="control lbl">Fax:</label></td>
                             </tr>
                             <tr>
-                                <td><input id="tel" class="control input-text gap-bottom" type="text" /></td>
-                                <td><input id="fax" class="control input-text gap-bottom" type="text" /></td>
+                                <td><input id="tel" class="control input-text gap-bottom" type="text" name="Phone" /></td>
+                                <td><input id="fax" class="control input-text gap-bottom" type="text" name="Fax" /></td>
                             </tr>
                             <tr>
                                 <td colspan="2"><label class="control lbl required">Your Enquiry:</label></td>
                             </tr>
                             <tr>
-                                <td colspan="2"><textarea class="control text-field gap-bottom"></textarea></td>
+                                <td colspan="2"><textarea class="control text-field gap-bottom" name="Message"></textarea></td>
                             </tr>
                             <tr>
-                                <td colspan="2"><input class="control btn" type="submit" value="send message" /></td>
+                                <td colspan="2"><input class="control btn" type="Submit" name="Submit" value="Submit" /></td>
                             </tr>
                         </table>
                     </form>
@@ -100,7 +100,7 @@
     <footer id="footer" class="clearfix">
         <div class="container">
             <img class="pull-right logo-ubm" src="img/ubm.png" alt="UBM logo" />
-            <p>Copyright © 2013 Philippines International Beauty Show.</p>
+            <p>Copyright © 2013 Asean International Beauty Show.</p>
             <p>All rights reserved.</p>
 
         </div>
@@ -108,16 +108,5 @@
     <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
     <script>        window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
     <script src="js/maininside.js"></script>
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-        (function (b, o, i, l, e, r) {
-            b.GoogleAnalyticsObject = l; b[l] || (b[l] =
-            function () { (b[l].q = b[l].q || []).push(arguments) }); b[l].l = +new Date;
-            e = o.createElement(i); r = o.getElementsByTagName(i)[0];
-            e.src = '//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e, r)
-        } (window, document, 'script', 'ga'));
-        ga('create', 'UA-XXXXX-X'); ga('send', 'pageview');
-    </script>
 </body>
 </html>
