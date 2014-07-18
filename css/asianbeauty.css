@@ -121,7 +121,7 @@ address {
 .navbar .nav-item {
     color: #fff;
     font-size: .9em;
-    padding: 0 5px;
+    padding: 0 15px;
 }
 
 .navbar li:hover .nav-item, .navbar li:focus .nav-item, .navbar li.active .nav-item {
